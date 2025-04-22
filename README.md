@@ -15,11 +15,14 @@
 ### 1) Клонуємо репозиторій
 ### 2) Скопіювати .env.example в .env і запустити 
 
-`./vendor/bin/sail up -d`
+`./vendor/bin/sail build  
+./vendor/bin/sail up -d
+./vendor/bin/sail composer install`
 
-### 3) Запустити міграції та сидери
+### 3) Запустити наступні команди
 
-`./vendor/bin/sail artisan migrate --seed`
+`./vendor/bin/sail artisan key:generate  
+./vendor/bin/sail artisan migrate --seed`
 
 ### 4) Перейти за адресою:
 #### Фронтенд: http://localhost
